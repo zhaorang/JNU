@@ -1,0 +1,32 @@
+{
+    "responseData": {
+        "feed": {
+            "feedUrl": "http://e.jiangnan.edu.cn/feed/news",
+            "title": "江南大学校园新闻",
+            "link": "http://www.jiangnan.edu.cn/",
+            "author": "zhaorang@jiangnan.edu.cn",
+            "description": "信息公告 通知说明 政策发布",
+            "type": "rss20",
+            "entries": [{
+                "title": "Behind the Sencha Command Utility and the Build Process",
+                "link": "http://www.sencha.com/blog/behind-sencha-command-and-the-build-process/#date:17:00",
+                "author": "Jacky Nguyen",
+                "publishedDate": "Wed, 02 May 2012 10:00:00 -0700",
+                "contentSnippet": "The Sencha command utility is a cross-platform command line tool that helps make it easier than ever to develop applications ...",
+                "content": "some content here",
+                "categories": []
+            },
+            {
+                "title": "Announcing Sencha GXT 3.0",
+                "link": "http://www.sencha.com/blog/announcing-sencha-gxt-3-0/#date:21:50",
+                "author": "Darrell Meyer",
+                "publishedDate": "Fri, 27 Apr 2012 14:50:00 -0700",
+                "contentSnippet": "We're excited to announce the general availability of Sencha GXT 3.0! Sencha GXT, previously known as Ext GWT, is our Java ...",
+                "content": "some content here",
+                "categories": []
+            }]
+        }
+    },
+    "responseDetails": null,
+    "responseStatus": 200
+}
