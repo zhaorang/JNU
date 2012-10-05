@@ -16,45 +16,59 @@
  *      校园服务、数字办公、信息管理
  */
 
+//Ext.define("JNU.ux.override.NavigationBar", {
+    //override	: "Ext.navigation.Bar",
+    //constructor: function(config) {
+        //this.callParent(arguments);
+        //this.setHidden(!this.getTitleText() || this.getTitleText() == "&nbsp;");
+    //},
+	
+    //doChangeView	: function(view, hasPrevious, reverse) {
+        //var t = this.getTitleText();
+        //this.setHidden((!t || t == "&nbsp;") && !hasPrevious);
+        //this.callParent(arguments);
+    //}
+//});
+
 
 Ext.define("JNU.view.Main", {
-    extend: 'Ext.tab.Panel',
+    //extend: 'Ext.tab.Panel',
+    extend: 'Ext.navigation.View',
     xtype: 'mainpanel',
     requires: [
         'Ext.TitleBar'
+        ,'JNU.view.Press'
+        ,'JNU.view.Info'
     ],
     config: {
-        tabBarPosition: 'bottom',
-        layout: {
-            animation: 'slide',
-            type: 'card'
+        defaultBackButtonText: '返回',
+        useTitleForBackButtonText: true,
+        navigationBar: {
+            ui: 'dark',
+            //hidden: true,
+            items:[{
+                iconCls: 'info',
+                iconMask: true,
+                ui: 'plain',
+                align: 'right',
+                action: 'login'
+            }]
         },
 
         items: [
             {
-                docked: 'top',
-                xtype:'titlebar',
-                title:'加载中...',
-                items:[{
-                    iconCls: 'info',
-                    iconMask: true,
-                    ui: 'plain',
-                    align: 'right',
-                    action: 'login'
-                }]
+                xtype:'tabpanel',
+                title:'校园新闻',
+                tabBarPosition: 'bottom',
+                layout: {
+                    animation: 'slide',
+                    type: 'card'
+                },
+                items:[
+                  {xtype:'presspanel'},
+                  {xtype:'infopanel'}
+                ]
             }
-            ,{
-                xtype:'presspanel'
-            }
-            ,{
-                xtype:'infopanel'
-            }
-            //,{
-                //xtype:'servicepanel'
-            //}
-            //,{
-                //xtype:'apppanel'
-            //}
         ]
     }
 });

@@ -10,9 +10,9 @@
 Ext.define('JNU.view.Info',{
     extend: 'Ext.tab.Panel',
     xtype: 'infopanel',
-    //requires:[
-        //'Ext.TitleBar'
-    //],
+    requires:[
+        'JNU.view.Intro'
+    ],
 
     config: {
         title: '学校概况',

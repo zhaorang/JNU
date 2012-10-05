@@ -3,11 +3,11 @@ Ext.define('JNU.controller.Main', {
     
     config: {
         refs: {
-            mainpanel: 'mainpanel',
+            mainpanel: 'mainpanel tabpanel',
             titlebar: 'mainpanel titlebar' 
         },
         control: {
-            'mainpanel':{
+            'mainpanel tabpanel':{
                 activeitemchange: 'changeTitle'
             }
         }

@@ -3,24 +3,19 @@ Ext.define('JNU.controller.News', {
     
     config: {
         refs: {
-            news: 'newspanel'
-            
+            news: 'mainpanel'
         },
         control: {
-            'newspanel list': {
-                itemtap: 'showPost'
+            'newslist': {
+                disclose: 'showDetail'
             }    
         }
     },
 
-    showPost: function(list, index, element, record){
+    showDetail: function(list, record){
         this.getNews().push({
-            xtype: 'panel',
-            title: record.get('title'),
-            //html: unescape(record.get('content')),
-            html: record.get('content'),
-            scrollable: true,
-            styleHtmlContent: true
+            xtype: 'newsdetail',
+            data: record.data
         });
     }
 });

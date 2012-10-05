@@ -1,11 +1,11 @@
-{
+锘縶
     "responseData": {
         "feed": {
             "feedUrl": "http://e.jiangnan.edu.cn/feed/news",
-            "title": "江南大学校园新闻",
+            "title": "姹熷崡澶у鏍″洯鏂伴椈",
             "link": "http://www.jiangnan.edu.cn/",
             "author": "zhaorang@jiangnan.edu.cn",
-            "description": "信息公告 通知说明 政策发布",
+            "description": "淇℃伅鍏憡 閫氱煡璇存槑 鏀跨瓥鍙戝竷",
             "type": "rss20",
             "entries": [{
                 "title": "Behind the Sencha Command Utility and the Build Process",

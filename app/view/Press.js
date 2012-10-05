@@ -9,9 +9,10 @@
 Ext.define('JNU.view.Press',{
     extend: 'Ext.tab.Panel',
     xtype: 'presspanel',
-    //requires:[
-        //'Ext.TitleBar'
-    //],
+    requires:[
+        'JNU.view.News',
+        'JNU.view.NewsDetail'
+    ],
 
     config: {
         title: '校园新闻',
@@ -27,7 +28,7 @@ Ext.define('JNU.view.Press',{
         
         items:[
             { 
-                xtype: 'newspanel',
+                xtype: 'newslist',
             }
         ] 
     }
