@@ -1,6 +1,6 @@
 Ext.define('JNU.model.News', {
     extend: 'Ext.data.Model',
     config:{
-        fields:['firstName','middleInitial','lastName']
+        fields:['title','link','author','publishedDate','contentSnippet','content']
     }
 });

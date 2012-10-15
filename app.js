@@ -15,7 +15,7 @@ Ext.application({
     ],
 
     views: ['Main'],
-    controllers: ['Main','News'],
+    controllers: ['Main','News','Announcement'],
     stores: ['News'],
     models: ['News'],
 

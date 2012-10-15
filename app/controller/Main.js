@@ -3,7 +3,7 @@ Ext.define('JNU.controller.Main', {
     
     config: {
         refs: {
-            mainpanel: 'mainpanel tabpanel',
+            tabpanel: 'mainpanel tabpanel',
             titlebar: 'mainpanel titlebar' 
         },
         control: {
@@ -16,7 +16,7 @@ Ext.define('JNU.controller.Main', {
     //called when the Application is launched, remove if not needed
     launch: function(app) {
         //系统初始化时设置标题栏文字
-        this.getTitlebar().setTitle(this.getMainpanel().getActiveItem().getTitle());
+        this.getTitlebar().setTitle(this.getTabpanel().getActiveItem().getTitle());
     },
 
     changeTitle: function(tabpanel, value, oldValue, eOpts){

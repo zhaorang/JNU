@@ -1,5 +1,6 @@
-Ext.define('JNU.store.News', {
+Ext.define('JNU.store.Announcement', {
     extend: 'Ext.data.Store',
+    alias  : 'store.announcement',
     
     config:{
         model: 'JNU.model.News',
@@ -9,13 +10,13 @@ Ext.define('JNU.store.News', {
         proxy:{
             //type: 'jsonp',
             type: 'ajax',
-            url:'feed/getNews.json',
+            url:'feed/getAnnouncement.json',
    
             pageParam: 'page',
             limitParam: 'rpp',
 
             extraParams: {
-                q: 'news'
+                q: 'announcement'
             },
 
             reader: {
@@ -25,4 +26,3 @@ Ext.define('JNU.store.News', {
         }
 }
 });
-

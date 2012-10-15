@@ -6,10 +6,10 @@
  * http://dev.jiangnan.edu.cn
  */
 
-//三级栏目：校园新闻.学校新闻.[明细]
-Ext.define('JNU.view.NewsDetail',{
+//三级栏目：校园新闻.校园公告.[明细]
+Ext.define('JNU.view.AnnouncementDetail',{
     extend: 'Ext.Panel',
-    xtype: 'newsdetail',
+    xtype: 'announcementdetail',
     //requires:[
         //'Ext.dataview.List',
         //'Ext.data.proxy.JsonP',
@@ -17,10 +17,9 @@ Ext.define('JNU.view.NewsDetail',{
     //],
 
     config: {
-        title: '学校新闻',
+        title: '校园公告',
         scrollable: 'vertical',
         styleHtmlContent: true,
         tpl: '<center>{title}</br>{publishedDate}　作者:{author}</center></br>{content}'
     }
 });
-

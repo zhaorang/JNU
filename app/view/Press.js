@@ -11,7 +11,9 @@ Ext.define('JNU.view.Press',{
     xtype: 'presspanel',
     requires:[
         'JNU.view.News',
-        'JNU.view.NewsDetail'
+        'JNU.view.NewsDetail',
+        'JNU.view.Announcement',
+        'JNU.view.AnnouncementDetail'
     ],
 
     config: {
@@ -27,9 +29,8 @@ Ext.define('JNU.view.Press',{
         },
         
         items:[
-            { 
-                xtype: 'newslist',
-            }
+            {xtype: 'newslist'}
+            ,{xtype: 'announcementlist'}
         ] 
     }
 });
